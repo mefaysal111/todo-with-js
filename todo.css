@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+
+.list-container {
+  width: 420px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+
+ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.45);
+  padding: 14px;
+  border-radius: 10px;
+  margin: 12px 0;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #4e73df;
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, background-color 0.25s ease;
+}
+
+li:hover {
+  transform: translateX(6px);
+  background: rgba(255, 255, 255, 0.6);
+}
+
+
+.delete-item {
+  background: #ff4b5c;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.delete-item:hover {
+  transform: scale(1.12);
+  background: #d63a49;
+}
+
+
+#text {
+  height: 36px;
+  width: 260px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  outline: none;
+  font-size: 16px;
+  padding: 0 12px;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  color: #333;
+  margin-bottom: 18px;
+  transition: border-color 0.25s ease;
+}
+
+#text:focus {
+  border-color: #4e73df;
+}
+
+.todo {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background: #4e73df;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, opacity 0.25s ease;
+}
+
+.clear-all {
+  width: 110px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #e63946;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, opacity 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
